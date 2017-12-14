@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package prototest;
+
+service TestService
+{
+	rpc AB(A) returns(B) {}
+}
+
+message A
+{
+	string data = 1;
+}
+
+message B
+{
+	string data = 1;
+}
