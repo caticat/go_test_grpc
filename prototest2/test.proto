@@ -1,4 +1,4 @@
-syntax = "proto3";
+syntax = "proto2";
 
 package prototest;
 
@@ -12,10 +12,10 @@ service TestService
 
 message A
 {
-	string data = 1;
+	optional string data = 1;
 }
 
 message B
 {
-	string data = 1;
+	optional string data = 1;
 }
